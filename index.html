@@ -1,115 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Archives - Muhammad Akmal Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muhammad Akmal Hakim Ahmad Asmawi - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark-mode">
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="latest-profile-pic.png" alt="Profile Picture" class="profile-pic">
-        <h2>MUHAMMAD AKMAL HAKIM</h2>
-        <p>Data Scientist | Analyst | Business Intelligence</p>
-        <div class="social-links">
-          <a href="https://kaggle.com/akma1xz" target="_blank"><i class="fab fa-kaggle"></i></a>
-          <a href="https://linkedin.com/in/m-akmal-hakim" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://x.com/akmal_xz" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <div class="profile-pic">
+      <img src="profile-pic.png" alt="Profile Picture">
+    </div>
+    <div class="header-text">
+      <h1>MUHAMMAD AKMAL HAKIM BIN AHMAD ASMAWI</h1>
+      <p class="subtext">Data Engineer | Data Analyst | Business Intelligence</p>
+      <div class="contact-info">
+        <a href="mailto:muhammadakmalhakim2490@gmail.com">
+          <i class="fas fa-envelope"></i> muhammadakmalhakim2490@gmail.com
+        </a> 
+        |
+        <span><i class="fas fa-phone"></i> +60 18 288 2455</span> 
+        |
+        <a href="https://linkedin.com/in/m-akmal-hakim" target="_blank">
+          <i class="fab fa-linkedin"></i> m-akmal-hakim
+        </a> 
+        |
+        <a href="https://github.com/akma1xz" target="_blank">
+          <i class="fab fa-kaggle"></i> akmalxz
+        </a>
       </div>
-      <nav class="nav-links">
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="home.html"><i class="fas fa-archive"></i> Archives</a></li>
-          <li><a href="#categories"><i class="fas fa-th"></i> Categories</a></li>
-          <li><a href="#resume"><i class="fas fa-user"></i> Résumé</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-      <!--
-      <div class="dark-mode-toggle">
-        <button id="darkModeToggle"><i class="fas fa-moon"></i> Dark Mode</button>
-      </div>-->
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Left Content -->
-      <div class="left-content">
-        <!-- Introduction -->
-        <section class="intro">
-          <h1>👋 Hey, I’m Muhammad Akmal!</h1>
-          <p>
-            I’m an aspiring data scientist and Python developer. My expertise spans machine learning, 
-            data visualization, and business intelligence. Check out my résumé for more details.
-          </p>
-          <p>
-            Over the years, I’ve worked on projects related to social media analytics, 
-            business intelligence, and advanced data modeling. I enjoy solving real-world problems 
-            with data-driven approaches and empowering businesses with actionable insights.
-          </p>
-        </section>
-
-        <!-- Writings -->
-        <section class="writings">
-          <h2>✍️ Writings:</h2>
-          <p>
-            I occasionally write about data science, programming, and personal projects. 
-            Here are some of my recent writings:
-          </p>
-          <ul>
-            <li><a href="#">How TikTok UGC Is Transforming Business Intelligence</a></li>
-            <li><a href="#">Getting Started with Sentiment Analysis in Python</a></li>
-            <li><a href="#">Leveraging Machine Learning for Social Media Insights</a></li>
-            <li><a href="#">Exploring Topic Modeling with BERTopic</a></li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Right Content -->
-      <div class="right-content">
-        <!-- Categories -->
-        <section class="categories">
-          <h2># Categories</h2>
-          <div class="categories-grid">
-            <div class="category-card">Articles</div>
-            <div class="category-card">Projects</div>
-            <div class="category-card">Tutorials</div>
-            <div class="category-card">Publications</div>
-          </div>
-        </section>
-
-        <!-- Tags -->
-        <section class="tags">
-          <h2>🏷️ Tags</h2>
-          <div class="tags-grid">
-            <span class="tag">Python</span>
-            <span class="tag">Data Science</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Business Intelligence</span>
-            <span class="tag">Visualization</span>
-            <span class="tag">Social Media</span>
-          </div>
-        </section>
-      </div>
-    </main>
+    </div>
   </div>
+</header>
 
-  <!--
-  <script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDarkMode = document.body.classList.contains('dark-mode');
-      darkModeToggle.innerHTML = isDarkMode
-        ? '<i class="fas fa-sun"></i> Light Mode'
-        : '<i class="fas fa-moon"></i> Dark Mode';
-    });
-  </script> -->
-</body>
-</html>
+<nav class="main-nav">
+  <ul>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+    <li><a href="#work"><i class="fas fa-briefcase"></i> Work</a></li>
+    <li><a href="#competitions"><i class="fas fa-trophy"></i> Competitions</a></li>
+    <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+    <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
+    <li><a href="#visualizations"><i class="fas fa-chart-bar"></i> Visualizations</a></li>
+    <li><a href="#references"><i class="fas fa-user-check"></i> References</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Fresh graduate and researcher specializing in data mining and business intelligence. Experienced in educational data mining and social media analytics using Python and KNIME Analytics Platform. Skilled in data preprocessing, modeling, and workflow automation with KNIME for basic data analysis. Contributed to journal/conference papers and research grants by collaborating with both international and local researchers. Previous experience includes developing web/mobile applications, tutoring in undergraduate lab sessions, and delivering guest lectures on data visualization using Tableau/PowerBI. Actively engaged in data science competitions and consulting projects, applying analytical techniques to solve real-world challenges. 
+    </p>
+    <p>
+      My experience includes an administrative internship and participation in a national Datathon, with skills in programming, data visualization, and academic research. I have co-authored a few research papers that are currently under review for publication.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="year-title-row">
+        <h3>2024 – Current</h3>
+        <p>M.Sc. Information Technology, Universiti Teknologi MARA (UiTM)</p>
+      </div>
+      <p>
+        Thesis Title: A Study on TikTok User-Generated Content through Descriptive Metadata and Advanced Modelling Techniques<br>
+        Status: Completing the thesis and preparing for submission
+      </p>
+      
+      <div class="year-title-row">
+        <h3>2020 – 2024</h3>
+        <p>Bachelor of Computer Science (Hons.), Universiti Teknologi MARA (UiTM)</p>
+      </div>
+      <p>
+        Final Year Project: Developed a mobile app to reduce long physical queues and crowded waiting areas with estimated waiting times, real-time tokens, and automatic queuing.<br>
+        GPA: 3.48
+      </p>
+      
+      <div class="year-title-row">
+        <h3>2019 – 2020</h3>
+        <p>Matriculation Computer Science, Kedah Matriculation College</p>
+      </div>
+      <p>
+        Completed the Malaysian Matriculation Program (1-Year, Module 2), with a focus on Mathematics, Chemistry, Physics, and Computer Science. Developed strong analytical and technical skills through a rigorous curriculum and continuous assessments, preparing for higher education in STEM fields.
+        CGPA: 3.63</p>
+
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching Experience</h2>
+    <div class="year-title-row">
+      <h3>Oct 2024 – Current</h3>
+      <p>UiTM Postgraduate Teaching Assistance (UPTA), Universiti Teknologi MARA (UiTM)</p>
+    </div>
+    <p>Served as a UiTM Postgraduate Teaching Assistant (UPTA), supporting undergraduate education through tutoring, conducting practical classes, and assisting with teaching-related tasks for up to 6 hours weekly. This role enhanced my skills in academic instruction, communication, and time management.</p>
+
+  </section>
+
+  <section id="work">
+    <h2>Working Experience</h2>
+    <div class="year-title-row">
+      <h3>April 2025 – Current</h3>
+      <p>Personel MySTEP, National Big Data Analytic Centre, Department of Statistic Malaysia (DOSM) </p>
+    </div>
+      <p>Worked on a rental property data project focused on automating the extraction, cleaning, and enrichment of listings from online platforms. Built a structured pipeline that cleaned raw data, geocoded addresses, and performed spatial joins. Integrated the entire workflow into Dagster to support asset-based orchestration, making the process reproducible and scalable for future automation.</p>
+    </p>
+
+    <div class="year-title-row">
+      <h3>Nov 2024 – April 2025</h3>
+      <p>Special Services, Universiti Teknologi Petronas (UTP) </p>
+    </div>
+      <p>Conducted research and development related to the center's focus, worked independently with occasional input from supervisor, handled technical and administrative tasks like preparing reports, presentations, and proposals, arranging appointments, and maintaining IT systems.</p>
+    </p>
+  
+    <div class="year-title-row">
+      <h3>Sept 2023 – Jan 2024</h3>
+      <p>Administrative Intern, OTC Training Centre Sdn Bhd</p>
+    </div>
+      <p>Managed administrative tasks, coordinated client communications, handled registration and logistics for training sessions, and developed a new system that improved workflow. Assisted with video editing, digital marketing content creation, and copywriting.</p>
+    </p>
+  
+    <div class="year-title-row">
+      <h3>2021</h3>
+      <p>Pusat Khidmat Merbok Data Management System</p>
+    </div>
+    <p>Developed a web application to streamline data retrieval, visualize data, and track data flow using HTML, CSS, Bootstrap, PHP, and SQL.<br>
+      Project Value: RM2,000
+    </p>
+  </section>
+
+  <section id="competitions">
+    <h2>Data Science Competitions</h2>
+    <div class="year-title-row">
+      <h3>2021</h3>
+      <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon</p>
+    </div>
+    <p>Participated in a data analysis and problem-solving competition, applying skills in data cleaning, data visualization, statistical analysis, and machine learning to tackle real-world problems.</p>
+  
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <th>Languages</th>
+        <td>Strong reading, writing, and speaking competencies in English, Bahasa Malaysia</td>
+      </tr>
+      <tr>
+        <th>Coding</th>
+        <td>Python, SQL, PHP, Java</td>
+      </tr>
+      <tr>
+        <th>Databases</th>
+        <td>MySQL, Firebase</td>
+      </tr>
+      <tr>
+        <th>Web Development</th>
+        <td>HTML, CSS, Bootstrap 5, Javascript, Latex</td>
+      </tr>
+      <tr>
+        <th>Visualisation</th>
+        <td>Tableau, Power BI, SAS</td>
+      </tr>
+      <tr>
+        <th>Misc.</th>
+        <td>Academic Research, Teaching Training, Consultation</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="publications">
+    <h2>Research Publications</h2>
+    <p>
+      Tariq, R., Isawasan, P., Shamugam, L., Ahmad Asmawi, M. A. H., Nor Azman, N. A., & Zolkepli, I. A. (2025). 
+      Exploring Social Media Research Trends in Malaysia using Bibliometric Analysis and Topic Modelling. 
+      EAI Endorsed Transactions on Scalable Information Systems, 12(2).
+    </p>
+    <p>
+      Ahmad Asmawi, M. A. H., Isawasan, P., Shamugam, L., Savitha, K.S., Budiarto, R. (2025). 
+      Understanding Engagement Metrics and Revenue Trends in Malaysian TikTok Shop Categories. 
+      15th IEEE Symposium on Computer Applications & Industrial Electronics. IEEE Xplore.
+    </p>
+    <p>
+      Isawasan, P., Ahmad Asmawi, M. A. H., Savitha, K.S., Shamugam, L., K.A. Salleh. (2025). 
+      A Data Analytics Approach to Exploring the Relationship Between TikTok Engagement and Revenue in Malaysia: A Case Study on the Beauty and Personal Care Sector. 
+      10th International Conference on Computing and Informatics (ICOCI). [Accepted]
+    </p>
+  </section>
+
+  <section id="visualizations">
+    <h2>Featured Visualizations</h2>
+    <h4>To Be Added...</h4>
+    <!--
+    <div class="charts-row">
+      <div class="chart-container">
+        <h3>Horizontal Bar Chart</h3>
+        <img src="bar_chart.png" alt="Bar Chart">
+      </div>
+      <div class="chart-container">
+        <h3>Pie Chart</h3>
+        <img src="pie_chart.png" alt="Pie Chart">
+      </div>
+      <div class="chart-container">
+        <h3>Horizontal Dual Axis Chart</h3>
+        <img src="dual_axis_chart.png" alt="Dual Axis Chart">
+      </div>
+    </div>
+    -->
+  </section>
+
+  <section id="references">
+    <h2>References</h2>
+    <p>
+      <strong>Ts. Dr. Pradeep Isawasam</strong><br>
+      Master Supervisor<br>
+      Universiti Teknologi MARA<br>
+      pradeepi@uitm.edu.my
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+      <p>
+        <i class="fas fa-copyright"></i> Muhammad Akmal Hakim Ahmad Asmawi
+      </p>
+    </div>
+  </footer>
+  
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+  </body>
+  </html>
