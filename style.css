@@ -1,358 +1,243 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #121212; /* Dark mode default background */
-  color: #e0e0e0;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Sidebar */
-.sidebar {
-  background: #121212; /* Matches the main background */
-  color: #fff;
-  padding: 20px;
-}
-
-.profile {
-  text-align: center;
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid #fff;
-}
-
-.profile h2 {
-  font-size: 1.5rem;
-}
-
-.profile p {
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-.social-links {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.social-links a {
-  color: #bbb;
-  font-size: 1.2rem;
-}
-
-.nav-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 15px 0;
-}
-
-.nav-links a {
-  color: #bbb;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.nav-links a:hover {
-  color: #007BFF;
-}
-
-.dark-mode-toggle {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.dark-mode-toggle button {
-  background: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.dark-mode-toggle button:hover {
-  background: #0056b3;
-}
-
-/* Main Content */
-.main-content {
-  background: none;
-  padding: 20px;
-  color: #e0e0e0;
-}
-
-.categories-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.category-card {
-  background: #333;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  flex: 1;
-  min-width: 200px;
-  transition: background 0.3s ease;
-}
-
-.category-card:hover {
-  background: #444;
-}
-
-.archive-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.archive-list li {
-  display: flex;
-  justify-content: space-between;
-  background: #333;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-.archive-list li:hover {
-  background: #444;
-}
-
-.archive-title {
-  font-weight: 500;
-}
-
-.archive-date {
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #fff; /* Light mode background */
-  color: #333; /* Light mode text */
-}
-
-body.dark-mode .sidebar {
-  background: #f9f9f9;
-  color: #333;
-}
-
-body.dark-mode .category-card {
-  background: #e0e0e0;
-  color: #333;
-}
-
-body.dark-mode .archive-list li {
-  background: #e0e0e0;
-  color: #333;
-}
-
-body.dark-mode .dark-mode-toggle button {
-  background: #333;
-  color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+  
+  h1 {
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #007BFF;
+  }
+  
   .container {
-    grid-template-columns: 1fr;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
   }
-}
-
-/* Main Content Layout */
-.main-content {
-  display: flex;
-  gap: 20px;
-}
-
-.left-content {
-  flex: 2;
-}
-
-.right-content {
-  flex: 1;
-  background: #1c1c1c;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Categories Section */
-.categories-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.category-card {
-  background: #333;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.category-card:hover {
-  background: #444;
-}
-
-/* Tags Section */
-.tags-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.tag {
-  background: #333;
-  color: #fff;
-  padding: 5px 15px;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.tag:hover {
-  background: #444;
-}
-
-/* Main Content Layout */
-.main-content {
-  display: flex;
-  gap: 20px;
-}
-
-/* Left Content (Sidebar remains unchanged) */
-.sidebar {
-  background: #121212; /* Same as the page background */
-  color: #fff;
-  padding: 20px;
-}
-
-/* Middle Content */
-.left-content {
-  flex: 2;
-  background: #1c1c1c; /* Background for the middle content */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Right Content */
-.right-content {
-  flex: 1;
-  background: none; /* Matches the page background */
-  color: #e0e0e0;
-}
-
-/* Intro Section */
-.intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  margin-bottom: 1rem;
-  line-height: 1.8;
-}
-
-/* Writings Section */
-.writings ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.writings ul li {
-  margin-bottom: 0.5rem;
-}
-
-.writings ul li a {
-  text-decoration: none;
-  color: #007BFF;
-  transition: color 0.3s ease;
-}
-
-.writings ul li a:hover {
-  color: #0056b3;
-}
-
-/* Categories Section */
-.categories-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.category-card {
-  background: #333;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.category-card:hover {
-  background: #444;
-}
-
-/* Tags Section */
-.tags-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.tag {
-  background: #333;
-  color: #fff;
-  padding: 5px 15px;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.tag:hover {
-  background: #444;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main-content {
+  
+  /* Header */
+  .header {
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 2rem 1rem;
+  }
+  
+  .header-inner {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
-  .left-content, .right-content {
-    flex: unset;
-    width: 100%;
+  
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 1rem;
   }
-}
+  
+  .header h1 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .subtext {
+    font-weight: 300;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info a {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+  
+  .contact-info a i {
+    margin-right: 5px;
+  }
+  
+  .contact-info span i {
+    margin-right: 5px;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 999;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-nav a i {
+    margin-right: 5px;
+  }
+  
+  .main-nav a:hover {
+    color: #007BFF;
+    border-bottom: 1px solid #007BFF;
+  }
+  
+  /* Sections */
+  section {
+    margin: 2rem 0;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  section p {
+    font-weight: 300; /* Light font weight for body text */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 1rem; /* Space between paragraphs */
+    text-align: justify; /* Justify all paragraph text */
+  }
+  
+  /* Footer */
+  .footer {
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .footer p i {
+    margin-right: 5px;
+  }
+  
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+    background: #007BFF;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    background: #0056b3;
+  }
+  
+  .back-to-top i {
+    font-size: 1rem;
+  }
+  
+  /* Skills Section */
+#skills {
+    text-align: left; /* Ensure the section aligns to the left */
+  }
+  
+  .skills-table {
+    width: 100%; /* Take up full width of the container */
+    border-collapse: collapse;
+  }
+  
+  .skills-table th, .skills-table td {
+    text-align: left; /* Align text to the left */
+    padding: 0.5rem 0;
+    vertical-align: top;
+  }
+  
+  .skills-table th {
+    font-weight: 600; /* Make headings bold */
+    width: 20%; /* Define width for the first column */
+    color: #333;
+  }
+  
+  .skills-table td {
+    font-weight: 300; /* Keep table content light for readability */
+    color: #555;
+  }
+  
+  .year-title-row {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 1rem; /* Add space between the year and title */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0.5rem; /* Add spacing between rows */
+  }
+  
+  .year-title-row h3 {
+    margin: 0; /* Remove default margin */
+    font-weight: 400; /* Adjust font weight */
+    font-size: 1rem; /* Adjust font size */
+    color: #555; /* Use a softer color for the year */
+    flex-shrink: 0; /* Prevent the year from shrinking */
+  }
+  
+  .year-title-row p {
+    margin: 0; /* Remove default margin */
+    font-weight: 600; /* Make the title bold */
+    font-size: 1rem; /* Adjust font size */
+    color: #333; /* Use a darker color for emphasis */
+    flex-grow: 1; /* Allow the title to take up available space */
+  }
