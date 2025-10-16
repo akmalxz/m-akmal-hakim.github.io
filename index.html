@@ -5,226 +5,209 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Muhammad Akmal Hakim Ahmad Asmawi - Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="style.css" />
-<link rel="icon" href="portfolio.png" type="image/png">
+<link rel="icon" href="profile-pic.png" type="image/png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
+  <canvas id="bg-canvas"></canvas>
   <div class="container header-inner">
+    <button id="theme-toggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
     <div class="profile-pic">
       <img src="profile-pic.png" alt="Profile Picture">
     </div>
     <div class="header-text">
-      <h1>MUHAMMAD AKMAL HAKIM BIN AHMAD ASMAWI</h1>
-      <p class="subtext">Data Engineer | Data Analyst | Business Intelligence</p>
+      <h1 class="name-title">MUHAMMAD AKMAL HAKIM</h1>
+      <h1>BIN AHMAD ASMAWI</h1>
+      <p class="subtext">Data Engineer | Data Analyst</p>
+      <p class="about-me-text">
+        As a data engineer with a passion for building robust data pipelines, I thrive on transforming raw data into actionable insights. My goal is to leverage technology to solve complex business problems and drive informed decisions.
+      </p>
       <div class="contact-info">
-        <a href="mailto:muhammadakmal2490@gmail.com">
-          <i class="fas fa-envelope"></i> muhammadakmal2490@gmail.com
-        </a> 
+        <a href="mailto:muhammadakmal2490@gmail.com"><i class="fas fa-envelope"></i> muhammadakmal2490@gmail.com</a>
         |
-        <span><i class="fas fa-phone"></i> +60 18 288 2455</span> 
+        <span><i class="fas fa-phone"></i> +60 18-288 2455</span>
         |
-        <a href="https://linkedin.com/in/m-akmal-hakim" target="_blank">
-          <i class="fab fa-linkedin"></i> m-akmal-hakim
-        </a> 
-        |
-        <a href="https://github.com/akma1xz" target="_blank">
-          <i class="fab fa-kaggle"></i> akmalxz
-        </a>
+        <a href="https://linkedin.com/in/m-akmal-hakim" target="_blank"><span><i class="fab fa-linkedin"></i> m-akmal-hakim</span></a>
       </div>
     </div>
   </div>
 </header>
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-    <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
-    <li><a href="#work"><i class="fas fa-briefcase"></i> Work</a></li>
-    <li><a href="#competitions"><i class="fas fa-trophy"></i> Competitions</a></li>
-    <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
-    <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
-    <li><a href="#visualizations"><i class="fas fa-chart-bar"></i> Visualizations</a></li>
-    <li><a href="#references"><i class="fas fa-user-check"></i> References</a></li>
-  </ul>
-</nav>
-
-<main class="container">
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      Fresh graduate and researcher specializing in data mining and business intelligence. Experienced in educational data mining and social media analytics using Python and KNIME Analytics Platform. Skilled in data preprocessing, modeling, and workflow automation with KNIME for basic data analysis. Contributed to journal/conference papers and research grants by collaborating with both international and local researchers. Previous experience includes developing web/mobile applications, tutoring in undergraduate lab sessions, and delivering guest lectures on data visualization using Tableau/PowerBI. Actively engaged in data science competitions and consulting projects, applying analytical techniques to solve real-world challenges. 
-    </p>
-    <p>
-      My experience includes an administrative internship and participation in a national Datathon, with skills in programming, data visualization, and academic research. I have co-authored a few research papers that are currently under review for publication.
-    </p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="year-title-row">
-        <h3>2024 – Current</h3>
-        <p>M.Sc. Information Technology, Universiti Teknologi MARA (UiTM)</p>
+<main class="main-content">
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <!-- Placeholder for an image or GIF of your project -->
+          <img src="https://placehold.co/400x300/222/e0e0e0?text=Project+1" alt="Project 1 Screenshot" class="project-image">
+        </div>
+        <div class="project-details">
+          <h3>ETL/ELT Pipeline</h3>
+          <p class="project-tech">Tools & Technologies Used | Python, Dagster]</p>
+          <p class="project-description">
+            Built an ETL pipeline to collect and transform data from various sources.
+          </p>
+          <a href="[Placeholder: Link to Project on GitHub/Portfolio]" target="_blank" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-      <p>
-        Thesis Title: A Study on TikTok User-Generated Content through Descriptive Metadata and Advanced Modelling Techniques<br>
-        Status: Completing the thesis and preparing for submission
-      </p>
-      
-      <div class="year-title-row">
-        <h3>2020 – 2024</h3>
-        <p>Bachelor of Computer Science (Hons.), Universiti Teknologi MARA (UiTM)</p>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x300/222/e0e0e0?text=Project+2" alt="Project 2 Screenshot" class="project-image">
+        </div>
+        <div class="project-details">
+          <h3>Monte Carlo Simulation</h3>
+          <p class="project-tech">Tools & Technologies Used | Python</p>
+          <p class="project-description">
+            Built an ETL pipeline to collect and transform data from various sources.
+          </p>
+          <a href="[Placeholder: Link to Project on GitHub/Portfolio]" target="_blank" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-      <p>
-        Final Year Project: Developed a mobile app to reduce long physical queues and crowded waiting areas with estimated waiting times, real-time tokens, and automatic queuing.<br>
-        GPA: 3.48
-      </p>
-      
-      <div class="year-title-row">
-        <h3>2019 – 2020</h3>
-        <p>Matriculation Computer Science, Kedah Matriculation College</p>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x300/222/e0e0e0?text=Project+3" alt="Project 3 Screenshot" class="project-image">
+        </div>
+        <div class="project-details">
+          <h3>Datathon Scoring System</h3>
+          <p class="project-tech">Tools & Technologies Used | Google App Script</p>
+          <p class="project-description">
+            Built an ETL pipeline to collect and transform data from various sources.
+          </p>
+          <a href="[Placeholder: Link to Project on GitHub/Portfolio]" target="_blank" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-      <p>
-        Completed the Malaysian Matriculation Program (1-Year, Module 2), with a focus on Mathematics, Chemistry, Physics, and Computer Science. Developed strong analytical and technical skills through a rigorous curriculum and continuous assessments, preparing for higher education in STEM fields.
-        CGPA: 3.63</p>
 
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x300/222/e0e0e0?text=Project+4" alt="Project 4 Screenshot" class="project-image">
+        </div>
+        <div class="project-details">
+          <h3>[Placeholder: Project Title]</h3>
+          <p class="project-tech">[Placeholder: Technologies Used | e.g., Python, SQL, Tableau]</p>
+          <p class="project-description">
+            Built an ETL pipeline to collect and transform data from various sources.
+          </p>
+          <a href="[Placeholder: Link to Project on GitHub/Portfolio]" target="_blank" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="https://placehold.co/400x300/222/e0e0e0?text=Project+5" alt="Project 5 Screenshot" class="project-image">
+        </div>
+        <div class="project-details">
+          <h3>[Placeholder: Project Title]</h3>
+          <p class="project-tech">[Placeholder: Technologies Used | e.g., Python, SQL, Tableau]</p>
+          <p class="project-description">
+            Built an ETL pipeline to collect and transform data from various sources.
+          </p>
+          <a href="[Placeholder: Link to Project on GitHub/Portfolio]" target="_blank" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="teaching">
-    <h2>Teaching Experience</h2>
-    <div class="year-title-row">
-      <h3>Oct 2024 – Feb 2025</h3>
-      <p>UiTM Postgraduate Teaching Assistance (UPTA), Universiti Teknologi MARA (UiTM)</p>
-    </div>
-    <p>Served as a UiTM Postgraduate Teaching Assistant (UPTA), supporting undergraduate education through tutoring, conducting practical classes, and assisting with teaching-related tasks for up to 6 hours weekly. This role enhanced my skills in academic instruction, communication, and time management.</p>
+  <hr>
 
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+            <h3>Personel MYSTEP</h3>
+            <p>National Big Data Analytic Centre (NBDAC) @ DOSM | <span class="date">April 2025 - Present</span></p>
+            <ul>
+                <li>[Placeholder: Key Responsibility 1]</li>
+                <li>[Placeholder: Key Responsibility 2]</li>
+                <li>[Placeholder: Key Achievement]</li>
+            </ul>
+        </div>
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+            <h3>Special Services | Research Assistant</h3>
+            <p>Universiti Teknologi PETRONAS (UTP) | <span class="date">November 2024 - April 2025</span></p>
+            <ul>
+              <li>Conduct research on MOOC and micro-credentials, focusing on digital learning trends and educational technologies.</li>
+              <li>Assist in data-driven research projects, leveraging Python and machine learning for analysis.</li>
+              <li>Contribute to conference paper development, ensuring high-quality academic publications.</li>
+              <li>Assist in the preparation of research grant proposals, including the MURATA Grant and matching grants.</li>
+              <li>Utilize data science techniques to analyze educational-related datasets.</li>
+              <li>Collaborate with academics partners to advance research in digital learning.</li>
+            </ul>
+        </div>
+        <!-- Add more timeline items as needed -->
+    </div>
   </section>
 
-  <section id="work">
-    <h2>Working Experience</h2>
-    <div class="year-title-row">
-      <h3>April 2025 – Current</h3>
-      <p>Personel MySTEP, National Big Data Analytic Centre, Department of Statistic Malaysia (DOSM) </p>
-    </div>
-      <p>Worked on a rental property data project focused on automating the extraction, cleaning, and enrichment of listings from online platforms. Built a structured pipeline that cleaned raw data, geocoded addresses, and performed spatial joins. Integrated the entire workflow into Dagster to support asset-based orchestration, making the process reproducible and scalable for future automation.</p>
-    </p>
-
-    <div class="year-title-row">
-      <h3>Nov 2024 – April 2025</h3>
-      <p>Special Services, Universiti Teknologi Petronas (UTP) </p>
-    </div>
-      <p>Conducted research and development related to the center's focus, worked independently with occasional input from supervisor, handled technical and administrative tasks like preparing reports, presentations, and proposals, arranging appointments, and maintaining IT systems.</p>
-    </p>
-  
-    <div class="year-title-row">
-      <h3>Sept 2023 – Jan 2024</h3>
-      <p>Administrative Intern, OTC Training Centre Sdn Bhd</p>
-    </div>
-      <p>Managed administrative tasks, coordinated client communications, handled registration and logistics for training sessions, and developed a new system that improved workflow. Assisted with video editing, digital marketing content creation, and copywriting.</p>
-    </p>
-  
-    <div class="year-title-row">
-      <h3>2021</h3>
-      <p>Pusat Khidmat Merbok Data Management System</p>
-    </div>
-    <p>Developed a web application to streamline data retrieval, visualize data, and track data flow using HTML, CSS, Bootstrap, PHP, and SQL.<br>
-      Project Value: RM2,000
-    </p>
-  </section>
-
-  <section id="competitions">
-    <h2>Data Science Competitions</h2>
-    <div class="year-title-row">
-      <h3>2021</h3>
-      <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon</p>
-    </div>
-    <p>Participated in a data analysis and problem-solving competition, applying skills in data cleaning, data visualization, statistical analysis, and machine learning to tackle real-world problems.</p>
-  
-  </section>
+  <hr>
 
   <section id="skills">
     <h2>Skills</h2>
     <table class="skills-table">
       <tr>
-        <th>Languages</th>
-        <td>Strong reading, writing, and speaking competencies in English, Bahasa Malaysia</td>
-      </tr>
-      <tr>
-        <th>Coding</th>
-        <td>Python, SQL, PHP, Java</td>
+        <th>Programming Languages</th>
+        <td>Python, SQL, App Script</td>
       </tr>
       <tr>
         <th>Databases</th>
-        <td>MySQL, Firebase</td>
+        <td>SQL, MySQL</td>
       </tr>
       <tr>
-        <th>Web Development</th>
-        <td>HTML, CSS, Bootstrap 5, Javascript, Latex</td>
+        <th>Data Engineering</th>
+        <td>ETL/ELT, Data Modeling, Dagster, Microsoft Azure</td>
       </tr>
       <tr>
-        <th>Visualisation</th>
-        <td>Tableau, Power BI, SAS</td>
-      </tr>
-      <tr>
-        <th>Misc.</th>
-        <td>Academic Research, Teaching Training, Consultation</td>
+        <th>Business Intelligence</th>
+        <td>Tableau, Power BI, Excel</td>
       </tr>
     </table>
   </section>
 
-  <section id="publications">
-    <h2>Research Publications</h2>
-    <p>
-      Tariq, R., Isawasan, P., Shamugam, L., Ahmad Asmawi, M. A. H., Nor Azman, N. A., & Zolkepli, I. A. (2025). 
-      Exploring Social Media Research Trends in Malaysia using Bibliometric Analysis and Topic Modelling. 
-      EAI Endorsed Transactions on Scalable Information Systems, 12(2).
+  <hr>
+
+  <section id="certifications-and-publications">
+    <h2>Certifications and Publications</h2>
+    <p class="section-text">
+      <a href="https://publications.eai.eu/index.php/sis/article/view/7003" target="_blank"><strong>Exploring Social Media Research Trends in Malaysia using Bibliometric Analysis and Topic Modelling</strong><br></a>
+      Tariq, R., Isawasan, P., Shamugam, L., Ahmad Asmawi, M. A. H., Nor Azman, N. A., & Zolkepli, I. A. (2025). Exploring Social Media Research Trends in Malaysia using Bibliometric Analysis and Topic Modelling. EAI Endorsed Transactions on Scalable Information Systems, 12(2).
     </p>
-    <p>
-      Ahmad Asmawi, M. A. H., Isawasan, P., Shamugam, L., Savitha, K.S., Budiarto, R. (2025). 
-      Understanding Engagement Metrics and Revenue Trends in Malaysian TikTok Shop Categories. 
-      15th IEEE Symposium on Computer Applications & Industrial Electronics. IEEE Xplore.
+    <p class="section-text">
+      <a href="https://ieeexplore.ieee.org/abstract/document/11080748" target="_blank"><strong>Understanding Engagement Metrics and Revenue Trends in Malaysian TikTok Shop Categories</strong><br></a>
+      Asmawi, M. A. H. A., Isawasan, P., Shamugam, L., Savita, K. S., & Budiarto, R. (2025, May). Understanding Engagement Metrics and Revenue Trends in Malaysian TikTok Shop Categories. In 2025 IEEE 15th Symposium on Computer Applications & Industrial Electronics (ISCAIE) (pp. 230-235). IEEE.
     </p>
-    <p>
-      Isawasan, P., Ahmad Asmawi, M. A. H., Savitha, K.S., Shamugam, L., K.A. Salleh. (2025). 
-      A Data Analytics Approach to Exploring the Relationship Between TikTok Engagement and Revenue in Malaysia: A Case Study on the Beauty and Personal Care Sector. 
-      10th International Conference on Computing and Informatics (ICOCI). [Accepted]
+    <p class="section-text">
+      <a href="https://ir.uitm.edu.my/id/eprint/118867/" target="_blank"><strong>Exploring sentiment trends in TikTok comments using GPT for influencer content strategy</strong><br></a>
+      Ahmad Asmawi, M. A. H., Isawasan, P., Shamugam, L., Ahmad Salleh, K., & Savita, K. S. (2025). Exploring sentiment trends in TikTok comments using GPT for influencer content strategy. e-Academia Journal, 14(1), 57-72.
     </p>
   </section>
+
+  <hr>
 
   <section id="visualizations">
     <h2>Featured Visualizations</h2>
-    <h4>To Be Added...</h4>
-    <!--
-    <div class="charts-row">
-      <div class="chart-container">
-        <h3>Horizontal Bar Chart</h3>
-        <img src="bar_chart.png" alt="Bar Chart">
-      </div>
-      <div class="chart-container">
-        <h3>Pie Chart</h3>
-        <img src="pie_chart.png" alt="Pie Chart">
-      </div>
-      <div class="chart-container">
-        <h3>Horizontal Dual Axis Chart</h3>
-        <img src="dual_axis_chart.png" alt="Dual Axis Chart">
-      </div>
+    <div class="visualizations-container">
+      <p class="placeholder-text">
+        [Placeholder: This is where you can embed or link to your best data visualizations.
+        Showcase your work from Tableau Public, Power BI, or visualizations you created with Python libraries like Matplotlib or Seaborn.]
+      </p>
     </div>
-    -->
-  </section>
-
-  <section id="references">
-    <h2>References</h2>
-    <p>
-      <strong>Ts. Dr. Pradeep Isawasam</strong><br>
-      Master Supervisor<br>
-      Universiti Teknologi MARA<br>
-      pradeepi@uitm.edu.my
-    </p>
   </section>
 </main>
+
+<a href="#" class="back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</a>
 
 <footer class="footer">
     <div class="container">
@@ -232,9 +215,184 @@
         <i class="fas fa-copyright"></i> Muhammad Akmal Hakim Ahmad Asmawi
       </p>
     </div>
-  </footer>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const sectionsToAnimate = document.querySelectorAll('section, .project-card');
+  const backToTopButton = document.querySelector('.back-to-top');
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    if (body.classList.contains('light-mode')) {
+      themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      localStorage.setItem('theme', 'light');
+    } else {
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, observerOptions);
+
+  sectionsToAnimate.forEach(el => observer.observe(el));
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+
+  backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Background Canvas Script
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  let mouse = { x: null, y: null, radius: 100 }; // mouse interaction radius
+
+  // Set canvas size and resize listener
+  function setCanvasSize() {
+    canvas.width = window.innerWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+  }
+  setCanvasSize();
+  window.addEventListener('resize', setCanvasSize);
   
-  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-  <script src="script.js"></script>
-  </body>
-  </html>
+  // Update mouse coordinates on mousemove
+  window.addEventListener('mousemove', (e) => {
+    mouse.x = e.x;
+    mouse.y = e.y;
+  });
+
+  // Particle constructor
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 1 - 0.3;
+      this.speedY = Math.random() * 1 - 0.3;
+    }
+    update() {
+      // Repel particles from the mouse cursor
+      const dx = this.x - mouse.x;
+      const dy = this.y - mouse.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < mouse.radius) {
+        const angle = Math.atan2(dy, dx);
+        const force = (mouse.radius - distance) / mouse.radius;
+        this.speedX += Math.cos(angle) * force * 0.2;
+        this.speedY += Math.sin(angle) * force * 0.2;
+      }
+
+      // Move particle
+      this.x += this.speedX;
+      this.y += this.speedY;
+      
+      // Keep particles within canvas bounds
+      if (this.x < 0 || this.x > canvas.width) {
+        this.speedX = -this.speedX;
+      }
+      if (this.y < 0 || this.y > canvas.height) {
+        this.speedY = -this.speedY;
+      }
+    }
+    draw() {
+      if (body.classList.contains('light-mode')) {
+        ctx.fillStyle = '#000000';
+      } else {
+        ctx.fillStyle = '#FFFCFB';
+      }
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function init() {
+    particles = [];
+    const numberOfParticles = Math.floor(canvas.width * canvas.height / 9000);
+    for (let i = 0; i < numberOfParticles; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  function connect() {
+    let opacityValue = 1;
+    for (let a = 0; a < particles.length; a++) {
+      for (let b = a; b < particles.length; b++) {
+        const distance = Math.sqrt(
+          (particles[a].x - particles[b].x) ** 2 +
+          (particles[a].y - particles[b].y) ** 2
+        );
+
+        if (distance < 120) {
+          opacityValue = 1 - (distance / 120);
+          if (body.classList.contains('light-mode')) {
+            ctx.strokeStyle = `rgba(0, 0, 0, ${opacityValue})`;
+          } else {
+            ctx.strokeStyle = `rgb(244, 231, 225, ${opacityValue})`;
+          }
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(particles[a].x, particles[a].y);
+          ctx.lineTo(particles[b].x, particles[b].y);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < particles.length; i++) {
+      particles[i].update();
+      particles[i].draw();
+    }
+    connect();
+  }
+
+  init();
+  animate();
+});
+</script>
+</body>
+</html>
